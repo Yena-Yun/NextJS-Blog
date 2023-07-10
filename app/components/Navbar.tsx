@@ -3,9 +3,9 @@ import navLinks from '@/data/navLinks';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={`flex gap-5`}>
       {navLinks.map(({ title, link }) => (
-        <Link href={link} key={title} className={`mr-5`}>
+        <Link href={link} key={title}>
           {title}
         </Link>
       ))}
